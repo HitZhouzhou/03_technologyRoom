@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>兄弟选择器</title>
+    <style>
+        /* 找到与div相邻的p标签 */
+        div+p {
+            color: red;
+        }
+
+        div~p {
+            color: blue;
+        }
+
+        li+li {
+            color: chocolate;
+        }
+    </style>
+</head>
+
+<body>
+    <p>卡卡</p>
+    <div>哈小周</div>
+    <p>java</p>
+    <p>前端</p>
+    <p>后端</p>
+    <p>大数据</p>
+    <ul>
+        <li>主页</li>
+        <li>关于</li>
+        <li>产品</li>
+        <li>服务</li>
+    </ul>
+</body>
+
+</html>

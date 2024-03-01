@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* div>p:not(.fail) {
+            color: brown;
+        }
+
+        div>p:not([title^="加油"]) {
+            color: red;
+        } */
+
+        div>p:not(:first-child) {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>张三98</p>
+        <p>赵六78</p>
+        <p>王五77</p>
+        <p>李四68</p>
+        <p class="fail" title="加油">田七58</p>
+        <p class="fail" title="加油">二愣子40</p>
+    </div>
+</body>
+
+</html>

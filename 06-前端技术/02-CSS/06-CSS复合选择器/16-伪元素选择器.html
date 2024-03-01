@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div::first-letter {
+            color: red;
+            font-size: 40px;
+        }
+
+        div::first-line {
+            background-color: brown;
+        }
+
+        div::selection {
+            color: orange;
+            background-color: green;
+        }
+
+        /* 选中p元素最开始的位置,随后创建一个子元素 */
+        p::before {
+            content: "$"
+        }
+
+        p::after {
+            content: ".00"
+        }
+
+        input::placeholder {
+            color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis veniam mollitia, repudiandae culpa iusto
+        blanditiis ea iure maxime nihil voluptatem nisi sunt! Non deleniti aut maiores unde accusamus commodi obcaecati.
+    </div>
+    <p>299</p>
+    <p>399</p>
+    <p>499</p>
+    <p>599</p>
+    <p>699</p>
+    <p>799</p>
+    <input type="text" placeholder="请输入用户名">
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!--
+    块级元素:独占一行,如div,h1,h2,h3,p,ul,ol,li,table,form
+    行内元素:不独占一行,如span,a,img,em,strong
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+        块级元素
+    -->
+    <marquee>哈小周</marquee>
+    <h1>哈小周</h1>
+    <p>哈小周</p>
+    <div>哈小周</div>
+    <!--
+        行内元素
+    -->
+    <span>哈小周</span>
+    <input type="text" value="哈小周">
+
+    <!--规则1:块级元素中能写:行内元素,块级元素...-->
+    <div>
+        <span>哈小周</span>
+        <h1>哈小周</h1>
+        <p>哈小周</p>
+    </div>
+    <!--规则2:行内元素中能写:行内元素,但不能写块级元素...-->
+    <span>
+        <span>哈小周</span>
+        <!-- <h1>哈小周</h1> -->
+        <p>哈小周</p>
+    </span>
+    <!--特殊规则:h1~h6不能互相嵌套-->
+
+    <!--特殊规则:p标签内不能有h标签,div标签,p标签(块元素)-->
+
+
+</body>
+
+</html>

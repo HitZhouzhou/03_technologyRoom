@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>03-后代选择器</title>
+    <style>
+        ul li {
+            color: red;
+        }
+
+        ol li {
+            color: blue;
+        }
+
+        .subject #front-end {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>哈哈</li>
+        <li>嘿嘿</li>
+        <li>呵呵</li>
+        <li>嘻嘻</li>
+    </ul>
+    <ol>
+        <li>哈哈</li>
+        <li>嘿嘿</li>
+        <li>呵呵</li>
+        <li>嘻嘻</li>
+    </ol>
+    <ol class="subject">
+        <li id="front-end">前端</li>
+        <li>后端</li>
+        <li>大数据</li>
+        <li>UI</li>
+    </ol>
+</body>
+
+</html>

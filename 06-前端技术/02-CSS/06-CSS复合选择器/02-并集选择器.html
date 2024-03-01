@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>02-并集选择器</title>
+    <style>
+        .rich {
+            color: red;
+            background-color: gray;
+            width: 100px;
+        }
+
+        .beauty {
+            color: blue;
+        }
+
+        p.beauty {
+            color: green;
+        }
+
+        .rich.beauty {
+            color: yellow;
+        }
+
+        .rich,
+        .beauty,
+        #suxi {
+            font-size: 50px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="rich">土豪</h2>
+    <h2 class="beauty">明星</h2>
+    <h2 class="rich beauty">土豪明星</h2>
+    <hr>
+    <p class="beauty" id="plittle">小p</p>
+    <p class="beauty">monkey</p>
+    <p id="suxi">苏西</p>
+</body>
+
+</html>

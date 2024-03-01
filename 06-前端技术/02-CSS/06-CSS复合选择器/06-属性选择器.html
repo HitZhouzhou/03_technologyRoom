@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* 第一种写法 */
+        /* div[title] {
+            color: red;
+        } */
+        /* 第二种写法 */
+        [title="1"] {
+            color: red;
+        }
+
+        /* 第三种写法 */
+        /* 选中以title属性值以a开头的标签 */
+        [title^="a"] {
+            color: skyblue;
+        }
+
+        [title$="2"] {
+            color: chocolate;
+        }
+
+        /* 第五种写法 */
+        [title*="1"] {
+            color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <div title="1">哈小周1</div>
+    <div title="2">哈小周2</div>
+    <div title="a1">猪</div>
+    <div title="a2">monkey</div>
+</body>
+
+</html>
